@@ -1,4 +1,4 @@
-# NLP Query Engine
+# NLP Query Engine — Demo (Student Assignment)
 
 This is a demo implementation of the assignment: **NLP Query Engine for Employee Data**.
 It includes:
@@ -10,12 +10,18 @@ It includes:
 - Node.js (16+ recommended)
 - pip, npm
 
+---
+
 ## Backend setup
 1. Open terminal:
 ```bash
-cd project/backend
-python -m venv venv
-# Linux/macOS:
-source venv/bin/activate
-# Windows (PowerShell):
-venv\Scripts\Activate.ps1
+    cd project/backend
+    python -m venv venv
+    # Linux/macOS:
+    source venv/bin/activate
+    # Windows (PowerShell):
+    venv\Scripts\Activate.ps1
+
+###
+1. Open terminal:
+```bash
