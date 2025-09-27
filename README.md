@@ -37,23 +37,23 @@ This section provides instructions for setting up the **FastAPI Backend** for th
     python -m venv venv
     .\venv\Scripts\Activate.ps1
     ```
-3.  **Install Python dependencies**:
+4.  **Install Python dependencies**:
     ```bash
     pip install -r requirements.txt
     ```
-4.  **Initialize the sample SQLite database**:
+5.  **Initialize the sample SQLite database**:
     ```bash
     python sample_db_init.py
     ```
     This creates a `company_demo.db` file in the backend directory.
 
-5.  **Run the FastAPI backend**:
+6.  **Run the FastAPI backend**:
     ```bash
     uvicorn main:app --reload --port 8000
     ```
     The `--reload` flag enables auto-reload for development. The server will run on `http://localhost:8000`.
 
-6.  **Verify the API**:
+7.  **Verify the API**:
     Open your browser and navigate to `http://localhost:8000/docs` to view the FastAPI interactive API documentation.
 
 ---
@@ -76,20 +76,13 @@ Open: http://localhost:3000
 - In the UI -> DatabaseConnector: use sqlite:///company_demo.db and click Connect & Analyze.
 - (Optional) Upload documents (txt/pdf/docx).
 - Run queries from Query panel:
-
 How many employees do we have?
-
 Average salary by department
-
 List employees hired this year
-
 Show me Python developers
-
 Top 5 highest paid employees in each department
-
 Document query: Show me resumes that mention leadership
-
-See results and metrics.
+- See results and metrics.
 
 ## Notes
 - Ensure the `requirements.txt` file exists and contains all necessary Python packages (e.g., fastapi, uvicorn, faiss-cpu, etc.).
