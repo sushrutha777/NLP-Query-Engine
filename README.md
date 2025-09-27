@@ -8,7 +8,7 @@ This section provides instructions for setting up the **FastAPI Backend** for th
 
 1.  **Clone the Repository** Clone the project from GitHub to your local machine:
     ```bash
-    git clone [https://github.com/sushrutha777/NLP-Query-Engine.git](https://github.com/sushrutha777/NLP-Query-Engine.git)
+    git clone https://github.com/sushrutha777/NLP-Query-Engine.git
     cd NLP-Query-Engine
     ```
 
