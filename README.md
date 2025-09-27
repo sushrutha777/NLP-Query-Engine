@@ -22,39 +22,46 @@ This section provides instructions for setting up the **FastAPI Backend** for th
 ---
 
 ## Backend Setup
-1.  **Navigate to the backend directory**:
+
+1. **Navigate to the backend directory**
     ```bash
     cd backend
     ```
-2.  **Create and activate a virtual environment**:
-    *For Linux/macOS:*
+
+2. **Create and activate a virtual environment**  
+
+    *Linux/macOS:*
     ```bash
     python3 -m venv venv
     source venv/bin/activate
     ```
-    *For Windows (PowerShell):*
+
+    *Windows (PowerShell):*
     ```bash
     python -m venv venv
     .\venv\Scripts\Activate.ps1
     ```
-4.  **Install Python dependencies**:
+
+3. **Install Python dependencies**
     ```bash
     pip install -r requirements.txt
     ```
-5.  **Initialize the sample SQLite database**:
+
+4. **Initialize the sample SQLite database**
     ```bash
     python sample_db_init.py
     ```
-    This creates a `company_demo.db` file in the backend directory.
+    > This creates a `company_demo.db` file in the backend directory.
 
-6.  **Run the FastAPI backend**:
+5. **Run the FastAPI backend**
     ```bash
     uvicorn main:app --reload --port 8000
     ```
-    The `--reload` flag enables auto-reload for development. The server will run on `http://localhost:8000`.
+    > The `--reload` flag enables auto-reload for development.  
+    > The server will run on [http://localhost:8000](http://localhost:8000).
 
-7.  **Verify the API**:
-    Open your browser and navigate to `http://localhost:8000/docs` to view the FastAPI interactive API documentation.
+6. **Verify the API**
+    - Open your browser and go to [http://localhost:8000/docs](http://localhost:8000/docs) to access the interactive FastAPI documentation.
 
 ---
 
