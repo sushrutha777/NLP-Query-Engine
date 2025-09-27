@@ -58,6 +58,39 @@ This section provides instructions for setting up the **FastAPI Backend** for th
 
 ---
 
+## Frontend setup
+
+1. **In a new terminal**:
+    ```bash
+    cd project/frontend
+    npm install
+    npm start
+
+    ```
+
+
+Open: http://localhost:3000
+
+## Demo flow
+
+- In the UI -> DatabaseConnector: use sqlite:///company_demo.db and click Connect & Analyze.
+- (Optional) Upload documents (txt/pdf/docx).
+- Run queries from Query panel:
+
+How many employees do we have?
+
+Average salary by department
+
+List employees hired this year
+
+Show me Python developers
+
+Top 5 highest paid employees in each department
+
+Document query: Show me resumes that mention leadership
+
+See results and metrics.
+
 ## Notes
 - Ensure the `requirements.txt` file exists and contains all necessary Python packages (e.g., fastapi, uvicorn, faiss-cpu, etc.).
 - Verify that the `sample_db_init.py` script successfully creates `company_demo.db`.
