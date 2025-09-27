@@ -71,18 +71,27 @@ This section provides instructions for setting up the **FastAPI Backend** for th
 
 Open: http://localhost:3000
 
-## Demo flow
+## Demo Flow
 
-- In the UI -> DatabaseConnector: use sqlite:///company_demo.db and click Connect & Analyze.
-- (Optional) Upload documents (txt/pdf/docx).
-- Run queries from Query panel:
-How many employees do we have?
-Average salary by department
-List employees hired this year
-Show me Python developers
-Top 5 highest paid employees in each department
-Document query: Show me resumes that mention leadership
-- See results and metrics.
+1. **Connect to Database**
+   - In the UI, go to **DatabaseConnector**.
+   - Use `sqlite:///company_demo.db`.
+   - Click **Connect & Analyze**.
+
+2. **Upload Documents (Optional)**
+   - Upload documents in **txt**, **pdf**, or **docx** format.
+
+3. **Run Queries from Query Panel**
+   - How many employees do we have?
+   - Average salary by department
+   - List employees hired this year
+   - Show me Python developers
+   - Top 5 highest paid employees in each department
+   - Document query: Show me resumes that mention leadership
+
+4. **View Results**
+   - Check results and metrics in the UI.
+
 
 ## Notes
 - Ensure the `requirements.txt` file exists and contains all necessary Python packages (e.g., fastapi, uvicorn, faiss-cpu, etc.).
