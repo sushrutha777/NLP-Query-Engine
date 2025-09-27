@@ -36,10 +36,11 @@ This section provides instructions for setting up the **FastAPI Backend** for th
     source venv/bin/activate
     ```
 
-    *Windows (PowerShell):*
+    *Windows (Command Prompt):*
     ```bash
     python -m venv venv
-    .\venv\Scripts\Activate.ps1
+    cd backend
+    .\venv\Scripts\activate
     ```
 
 3. **Install Python dependencies**
