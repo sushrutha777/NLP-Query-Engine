@@ -1,4 +1,4 @@
-# NLP Query Engine — Demo (Student Assignment)
+# NLP Query Engine
 
 This is a demo implementation of the assignment: **NLP Query Engine for Employee Data**.
 It includes:

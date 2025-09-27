@@ -145,6 +145,22 @@ env.bak/
 venv.bak/
 backend/venv/
 
+# Ignore SQLite database
+company_demo.db
+
+# Optional: Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Node.js dependencies
+frontend/node_modules/
+
+# Node.js package lock
+frontend/package-lock.json
+frontend/package.json
+
+
 # Spyder project settings
 .spyderproject
 .spyproject
