@@ -1,5 +1,7 @@
 # NLP Query Engine for Employee Data - Backend Setup
+
 This section provides instructions for setting up the **FastAPI Backend** for the NLP Query Engine for Employee Data, which handles schema discovery, document ingestion (embeddings + FAISS), query engine, and caching.
+
 ---
 
 ## Getting Started
