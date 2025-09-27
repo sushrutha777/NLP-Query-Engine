@@ -1,27 +1,71 @@
-# NLP Query Engine — Demo (Student Assignment)
+# NLP Query Engine for Employee Data - Backend Setup
 
-This is a demo implementation of the assignment: **NLP Query Engine for Employee Data**.
-It includes:
-- FastAPI backend: schema discovery, document ingestion (embeddings + FAISS), query engine, caching.
-- React frontend: DB connect, document uploader, query interface, results view.
-
-## Prerequisites
-- Python 3.8+
-- Node.js (16+ recommended)
-- pip, npm
+This section provides instructions for setting up the **FastAPI Backend** for the NLP Query Engine for Employee Data, which handles schema discovery, document ingestion (embeddings + FAISS), query engine, and caching.
 
 ---
 
-## Backend setup
-1. Open terminal:
-```bash
-    cd project/backend
-    python -m venv venv
-    # Linux/macOS:
-    source venv/bin/activate
-    # Windows (PowerShell):
-    venv\Scripts\Activate.ps1
+## Getting Started
 
-###
-1. Open terminal:
-```bash
+1.  **Clone the Repository** Clone the project from GitHub to your local machine:
+    ```bash
+    git clone [https://github.com/sushrutha777/NLP-Query-Engine.git](https://github.com/sushrutha777/NLP-Query-Engine.git)
+    cd NLP-Query-Engine
+    ```
+
+---
+
+## Prerequisites
+- **Python**: 3.8 or higher
+- **Tools**: `pip`
+- **Optional**: Virtual environment tool (e.g., `venv` or `virtualenv`)
+
+---
+
+## Backend Setup
+1.  **Navigate to the backend directory**:
+    ```bash
+    cd backend
+    ```
+2.  **Create and activate a virtual environment**:
+    *For Linux/macOS:*
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+    *For Windows (PowerShell):*
+    ```bash
+    python -m venv venv
+    .\venv\Scripts\Activate.ps1
+    ```
+3.  **Install Python dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+4.  **Initialize the sample SQLite database**:
+    ```bash
+    python sample_db_init.py
+    ```
+    This creates a `company_demo.db` file in the backend directory.
+
+5.  **Run the FastAPI backend**:
+    ```bash
+    uvicorn main:app --reload --port 8000
+    ```
+    The `--reload` flag enables auto-reload for development. The server will run on `http://localhost:8000`.
+
+6.  **Verify the API**:
+    Open your browser and navigate to `http://localhost:8000/docs` to view the FastAPI interactive API documentation.
+
+---
+
+## Notes
+- Ensure the `requirements.txt` file exists and contains all necessary Python packages (e.g., fastapi, uvicorn, faiss-cpu, etc.).
+- Verify that the `sample_db_init.py` script successfully creates `company_demo.db`.
+- Port `8000` should not be in use by other applications.
+- For production, remove the `--reload` flag from the `uvicorn` command to disable auto-reload.
+
+---
+
+## Troubleshooting
+- **Backend fails to start**: Check if `main.py` exists and the `app` object is correctly defined. Ensure all dependencies in `requirements.txt` are installed.
+- **Database issues**: Verify that `company_demo.db` was created and is accessible in the backend directory.
