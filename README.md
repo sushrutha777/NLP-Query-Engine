@@ -32,14 +32,12 @@ This section provides instructions for setting up the **FastAPI Backend** for th
 
     *Linux/macOS:*
     ```bash
-    cd backend
     python3 -m venv venv
     source venv/bin/activate
     ```
 
     *Windows:*
     ```bash
-    cd backend
     python -m venv venv
     .\venv\Scripts\activate
     ```
